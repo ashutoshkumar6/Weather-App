@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src *;
+    img-src * 'self' data: https: http:;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' *;
+    style-src  'self' 'unsafe-inline' *">
+</head>
+<body>
+    
+     <div class="index">
+      {{>header}}
+        <div class="form">
+            <form>
+                <input type="text"  placeholder="Enter the Location">
+
+                <button>Submit</button>
+            </form>
+          <p id="value1"></p> <p id="value2"></p>  
+        </div>
+    {{>footer}}
+    </div>
+    <script src="/JS/app.js"></script>
+</body>
+
+</html>
